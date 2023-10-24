@@ -36,14 +36,6 @@ export default function Home() {
                 <Github className="w-6 h-6"/>
               </SocialButton>
 
-              {/* <SocialButton bgColor="instagram">
-                <Instagram className="w-5 h-5"/>
-              </SocialButton> */}
-
-              <SocialButton bgColor="twitter">
-                <Twitter className="w-5 h-5"/>
-              </SocialButton>
-
               <SocialButton bgColor="linkedin">
                 <Linkedin className="w-5 h-5"/>
               </SocialButton>
@@ -64,35 +56,21 @@ export default function Home() {
         <ProjectPreview
           name="Research2Slides"
           description="Convert research papers to powerpoints in seconds!"
-          imageUrl="/huberman-ai.png"
+          imageUrl="/project-1.png"
           bgColor="#685cdd"
           dark 
         />
         <ProjectPreview
           name="Course Manager"
           description="Built with VBA, to save professors time"
-          imageUrl="/huberman-ai.png"
+          imageUrl="/project-2.png"
           bgColor="#685cdd"
           dark 
         />
         <ProjectPreview
           name="Huberman AI"
           description="Get scientifically accurate answers to your questions"
-          imageUrl="/huberman-ai.png"
-          bgColor="#685cdd"
-          dark 
-        />
-        <ProjectPreview
-          name="Huberman AI"
-          description="Get scientifically accurate answers to your questions"
-          imageUrl="/huberman-ai.png"
-          bgColor="#685cdd"
-          dark 
-        />
-        <ProjectPreview
-          name="Huberman AI"
-          description="Get scientifically accurate answers to your questions"
-          imageUrl="/huberman-ai.png"
+          imageUrl="/project-3.png"
           bgColor="#685cdd"
           dark 
         />
@@ -101,9 +79,8 @@ export default function Home() {
       <section className="grid grid-cols-1 mb-8">
 
         <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
-          <h1 className="text-4xl font-semibold">Hello I'm Rayaan, a Software Engineer with 5 years of experience.</h1>
-          <p className="flex-1">I care a lot about using software engeering for a positive impact and enjoy
-            creating user-centric, delightful, and human experiences
+          <h1 className="text-4xl font-semibold">Want to work together?</h1>
+          <p className="flex-1">Feel free to reach out to collaborate on something or just say hello! <br></br> rayaan.k.ca@gmail.com
           </p>
 
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
@@ -114,9 +91,6 @@ export default function Home() {
                 <Github className="w-6 h-6"/>
               </SocialButton>
 
-              <SocialButton bgColor="twitter">
-                <Twitter className="w-5 h-5"/>
-              </SocialButton>
 
               <SocialButton bgColor="linkedin">
                 <Linkedin className="w-5 h-5"/>
