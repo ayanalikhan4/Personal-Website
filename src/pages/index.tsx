@@ -48,21 +48,21 @@ export default function Home() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
           name="Huberman AI"
-          description="Get scientifically accurate answers to your questions"
+          description="Get scientifically accurate answers"
           imageUrl="/huberman-ai.png"
           bgColor="#685cdd"
           dark 
         />
         <ProjectPreview
           name="Research2Slides"
-          description="Convert research papers to powerpoints in seconds!"
+          description="Convert research papers to powerpoints!"
           imageUrl="/project-1.png"
           bgColor="#685cdd"
           dark 
         />
         <ProjectPreview
           name="Course Manager"
-          description="Built with VBA, to save professors time"
+          description="Built with VBA, save professors time"
           imageUrl="/project-2.png"
           bgColor="#685cdd"
           dark 
