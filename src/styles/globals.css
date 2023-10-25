@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
     @apply max-w-[90%] w-[1080px] mx-auto
+    bg-black
+    overflow-x: hidden;
+} */
+
+body {
+    @apply max-w-[68rem] w-[95vw] mx-auto;
     /* bg-black */
+    /* overflow-x: hidden; */
 }
-  

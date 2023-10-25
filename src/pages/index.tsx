@@ -76,8 +76,8 @@ export default function Home() {
         />
       </section>
 
+      {/* footer section */}
       <section className="grid grid-cols-1 mb-8">
-
         <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
           <h1 className="text-4xl font-semibold">Want to work together?</h1>
           <p className="flex-1">Feel free to reach out to collaborate on something or just say hello! <br></br> rayaan.k.ca@gmail.com
@@ -98,7 +98,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile.jpg')] bg-cover bg-center"/> */}
       </section>  
 
 
