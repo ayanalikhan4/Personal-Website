@@ -49,23 +49,23 @@ export default function Home() {
         <ProjectPreview
           name="Huberman AI"
           description="Get scientifically accurate answers"
-          imageUrl="/huberman-ai.png"
+          imageUrl="/project-1.png"
           bgColor="#685cdd"
           dark 
         />
         <ProjectPreview
           name="Research2Slides"
           description="Convert research papers to powerpoints!"
-          imageUrl="/project-1.png"
-          bgColor="#685cdd"
+          imageUrl="/project-2.png"
+          bgColor="#414422"
           dark 
         />
         <ProjectPreview
-          name="Course Manager"
-          description="Built with VBA, save professors time"
+          name="Research2Slides"
+          description="Convert research papers to powerpoints!"
           imageUrl="/project-2.png"
-          bgColor="#685cdd"
-          dark 
+          // bgColor="#4e4e56"
+          // dark 
         />
         <ProjectPreview
           name="Huberman AI"

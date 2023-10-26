@@ -33,6 +33,7 @@ const ProjectPreview: React.FC<Props> = ({
             className='h-full w-full px-10 py-6 duration-[500ms] transition-all ease-in-out hover:scale-105 bg-cover bg-no-repeat bg-center'
             style={{backgroundImage: `url('${imageUrl}')`}}
         >   
+        
             <div className='flex justify-between'>
             <div>
                 <h2 className='font-medium text-lg dark:text-white'>{name}</h2>
