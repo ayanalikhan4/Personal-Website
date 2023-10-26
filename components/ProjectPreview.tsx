@@ -8,7 +8,9 @@ interface Props {
     imageUrl?: string | undefined;
     bgColor?: string | undefined;
     dark?: boolean | undefined;
+    link?: string | undefined; 
 }
+
 
 
 const ProjectPreview: React.FC<Props> = ({
@@ -17,6 +19,7 @@ const ProjectPreview: React.FC<Props> = ({
     imageUrl = "/project-1.png",
     bgColor = "#e4e4e7",
     dark = false,
+    link="https://rayaankhan.ca"
 
 }) => {
   return ( 
@@ -39,9 +42,13 @@ const ProjectPreview: React.FC<Props> = ({
                 <h2 className='font-medium text-lg dark:text-white'>{name}</h2>
                 <p className='text-sm text-zinc-500 dark:text-zinc-300'>{description}</p>
             </div>
-            <div className='h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer'>
+            <div 
+                className='h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer'
+                onClick={() => link && window.open(link, "_blank")}  // <-- Add this line
+            >
                 <Arrow className="w-6 h-6"/>
             </div>
+
             </div>
         </div>
     </motion.div>
