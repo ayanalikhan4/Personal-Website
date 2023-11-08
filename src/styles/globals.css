@@ -28,9 +28,11 @@ body {
   }
   
   .animated-gradient {
-    background: linear-gradient(270deg, #08F7FE, #ffffff);
+    /* background: linear-gradient(270deg, #47d3d8, #ffffff); */
+    background: linear-gradient(270deg, #F8D926, #f82424);
     background-size: 400% 400%;
-    animation: gradientAnimation 7s ease infinite;
+    /* animation:cubic-bezier(0.755, 0.05, 0.855, 0.06) */
+    animation: gradientAnimation 12s ease infinite;
 }
 
   
