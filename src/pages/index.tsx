@@ -28,8 +28,13 @@ export default function Home() {
       <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
 
         <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
-          <h1 className="text-4xl font-semibold">Hello I'm Rayaan, a Software Engineer with 5 years of experience.</h1>
-          <p className="flex-1">This website is under construction... 🛠️
+          <h1 className="text-4xl font-semibold">Rayaan Khan | Software Engineer</h1>
+          <p className="flex-1">
+
+            Pusuing Hons. BSc Computer Science
+            Graduation: April 2026
+            Wilfrid Laurier
+
           </p>
 
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">

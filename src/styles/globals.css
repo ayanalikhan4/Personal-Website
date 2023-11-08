@@ -27,19 +27,17 @@ body {
     }
   }
   
-  .animated-gradient {
-    /* background: linear-gradient(270deg, #47d3d8, #ffffff); */
+.animated-gradient {
     background: linear-gradient(270deg, #F8D926, #f82424);
     background-size: 400% 400%;
-    /* animation:cubic-bezier(0.755, 0.05, 0.855, 0.06) */
-    animation: gradientAnimation 12s ease infinite;
+    animation: gradientAnimation 7s ease infinite;
 }
 
 
 .animated-gradient-text {
   background: linear-gradient(270deg, #F8D926, #f82424);
   background-size: 400% 400%;
-  animation: gradientAnimation 12s ease infinite;
+  animation: gradientAnimation 7s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block; /* Required for the background to apply only to the text */
