@@ -10,6 +10,7 @@ import Github from "../../public/github.svg"
 import Doc from "../../public/Doc.svg"
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -25,8 +26,7 @@ export default function Home() {
 
         <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
           <h1 className="text-4xl font-semibold">Hello I'm Rayaan, a Software Engineer with 5 years of experience.</h1>
-          <p className="flex-1">I care a lot about using software engeering for a positive impact and enjoy
-            creating user-centric, delightful, and human experiences
+          <p className="flex-1">This website is under construction... 🛠️
           </p>
 
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
