@@ -11,7 +11,7 @@
 
 body {
     @apply max-w-[68rem] w-[95vw] mx-auto;
-    background: #F1F0E8;
+    background: #0F0F0F;
     /* overflow-x: hidden; */
 }
 
@@ -28,9 +28,9 @@ body {
   }
   
   .animated-gradient {
-    background: linear-gradient(270deg, #b8ced8, #8eadbc);
+    background: linear-gradient(270deg, #08F7FE, #08F7FE);
     background-size: 400% 400%;
-    animation: gradientAnimation 5s ease infinite;
+    animation: gradientAnimation 15s ease infinite;
 }
 
   

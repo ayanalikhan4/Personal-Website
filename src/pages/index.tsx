@@ -50,15 +50,15 @@ export default function Home() {
           name="Huberman AI"
           description="Get scientifically accurate answers"
           imageUrl="/project-1.png"
-          bgColor="#96B6C5"
-          // dark
+          bgColor="#252525"
+          dark
           link="https://research2-slides-front-end.vercel.app/"
         />
         <ProjectPreview
           name="Airport Management System"
           description="Manage all aspects of an airport"
           imageUrl="/project-2.png"
-          bgColor="#96B6C5"
+          bgColor="#252525"
           dark
           link="https://github.com/Rayaan-khan428/Airline-Management-System"
           
@@ -67,7 +67,7 @@ export default function Home() {
           name="Research2Slides"
           description="Convert research papers to powerpoints!"
           imageUrl="/project-3.png"
-          bgColor="#96B6C5"
+          bgColor="#252525"
           dark
           link="https://research2-slides-front-end.vercel.app/"
         />
@@ -75,7 +75,9 @@ export default function Home() {
           name="Huberman AI"
           description="Get scientifically accurate answers to your questions"
           imageUrl="/project-3.png"
-          bgColor="#96B6C5"
+          bgColor="#252525"
+          dark
+          link="https://research2-slides-front-end.vercel.app/"
         />
       </section>
 
