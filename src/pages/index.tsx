@@ -22,7 +22,7 @@ export default function Home() {
       
       <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
 
-        <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+        <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
           <h1 className="text-4xl font-semibold">Hello I'm Rayaan, a Software Engineer with 5 years of experience.</h1>
           <p className="flex-1">I care a lot about using software engeering for a positive impact and enjoy
             creating user-centric, delightful, and human experiences
@@ -50,7 +50,7 @@ export default function Home() {
           name="Huberman AI"
           description="Get scientifically accurate answers"
           imageUrl="/project-1.png"
-          bgColor="#C5DAD2"
+          bgColor="#96B6C5"
           // dark
           link="https://research2-slides-front-end.vercel.app/"
         />
@@ -58,7 +58,7 @@ export default function Home() {
           name="Airport Management System"
           description="Manage all aspects of an airport"
           imageUrl="/project-2.png"
-          bgColor="#414422"
+          bgColor="#96B6C5"
           dark
           link="https://github.com/Rayaan-khan428/Airline-Management-System"
           
@@ -67,21 +67,21 @@ export default function Home() {
           name="Research2Slides"
           description="Convert research papers to powerpoints!"
           imageUrl="/project-3.png"
-          // bgColor="#4e4e56"
-          // dark
+          bgColor="#96B6C5"
+          dark
           link="https://research2-slides-front-end.vercel.app/"
         />
         <ProjectPreview
           name="Huberman AI"
           description="Get scientifically accurate answers to your questions"
           imageUrl="/project-3.png"
-          bgColor="linear-gradient(138deg, rgba(228,228,231,1) 12%, rgba(245,227,189,1) 84%);"
+          bgColor="#96B6C5"
         />
       </section>
 
       {/* footer section */}
       <section className="grid grid-cols-1 mb-8">
-        <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+        <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
           <h1 className="text-4xl font-semibold">Want to work together?</h1>
           <p className="flex-1">Feel free to reach out to collaborate on something or just say hello! <br></br> rayaan.k.ca@gmail.com
           </p>

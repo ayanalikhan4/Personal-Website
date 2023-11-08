@@ -6,10 +6,31 @@
     @apply max-w-[90%] w-[1080px] mx-auto
     bg-black
     overflow-x: hidden;
+    
 } */
 
 body {
     @apply max-w-[68rem] w-[95vw] mx-auto;
-    /* bg-black */
+    background: #F1F0E8;
     /* overflow-x: hidden; */
 }
+
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .animated-gradient {
+    background: linear-gradient(270deg, #b8ced8, #8eadbc);
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+}
+
+  
