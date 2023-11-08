@@ -31,9 +31,9 @@ export default function Home() {
           <h1 className="text-4xl font-semibold">Rayaan Khan | Software Engineer</h1>
           <p className="flex-1">
 
-            Pusuing Hons. BSc Computer Science <br />
-            Graduation: April 2026 <br />
-            Wilfrid Laurier <br />
+            - Pusuing Hons. BSc Computer Science <br />
+            - Graduation: April 2026 <br />
+            - University: Wilfrid Laurier <br />
 
           </p>
 
