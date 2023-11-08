@@ -7,6 +7,8 @@ import Linkedin from  '../../public/linkedin.svg'
 import ProjectPreview from "../../components/ProjectPreview";
 import Github from "../../public/github.svg"
 import Doc from "../../public/Doc.svg"
+import SkillCard from "../../components/SkillCard";
+import AboutMe from "../../components/AboutMe";
 
 export default function Home() {
 
@@ -51,6 +53,10 @@ export default function Home() {
         <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile.jpg')] bg-cover bg-center"/>
       </section>  
 
+      <section className="grid grid-cols-1 mb-8">
+        <AboutMe />
+      </section>
+
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
           name="Huberman AI"
@@ -84,6 +90,31 @@ export default function Home() {
           bgColor="#252525"
           dark
           link="https://research2-slides-front-end.vercel.app/"
+        />
+      </section>
+
+      {/* Skills */}
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <SkillCard
+          title="Tech Stack"
+          items={[
+            'Python', 'Java', 'JavaScript', 'TypeScript', 'HTML/CSS', 'C', 'Unity',
+            'NextJS', 'ExpressJS', 'React', 'NodeJS', 'SQL', 'MongoDB'
+          ]}
+        />
+        <SkillCard
+          title="Tools"
+          items={[
+            'Git and Github', 'Tableau', 'PowerBI', 'UML', 'Maven', 'Firebase',
+            'Googling', 'Linux', 'PostgreSQL', 'Spring Boot', 'Selenium', 'R'
+          ]}
+        />
+        <SkillCard
+          title="Interests"
+          items={[
+            'Hackathons', 'Robotics', 'Weightlifting', 'Camping', 'Hiking',
+            'Aviation & Aerospace', 'Machine learning & AI', 'Cooking'
+          ]}
         />
       </section>
 

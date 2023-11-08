@@ -35,4 +35,19 @@ body {
     animation: gradientAnimation 12s ease infinite;
 }
 
-  
+
+.animated-gradient-text {
+  background: linear-gradient(270deg, #F8D926, #f82424);
+  background-size: 400% 400%;
+  animation: gradientAnimation 12s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Required for the background to apply only to the text */
+}
+
+/* For browsers that don't support text gradients, you can fallback to a solid color */
+@supports not (-webkit-background-clip: text) {
+  .animated-gradient-text {
+    color: #F8D926; /* Fallback color */
+  }
+}
