@@ -7,6 +7,7 @@ import Twitter from '../../public/twitter.svg'
 import Linkedin from  '../../public/linkedin.svg'
 import ProjectPreview from "../../components/ProjectPreview";
 import Github from "../../public/github.svg"
+import Doc from "../../public/Doc.svg"
 
 export default function Home() {
   return (
@@ -32,13 +33,18 @@ export default function Home() {
             <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">Contact me</button>
             <div className="flex items-center gap-4">
               
-              <SocialButton bgColor="github">
-                <Github className="w-6 h-6"/>
+              <SocialButton bgColor="github" >
+                <Github className="w-6 h-6" link="https://github.com/rayaan-khan428"/>
               </SocialButton>
 
               <SocialButton bgColor="linkedin">
-                <Linkedin className="w-5 h-5"/>
+                <Linkedin className="w-5 h-5" link="https://github.com/yourusername"/>
               </SocialButton>
+
+              <SocialButton bgColor="linkedin">
+                <Doc className="w-5 h-5" link="https://github.com/yourusername"/>
+              </SocialButton>
+
             </div>
           </div>
         </div>

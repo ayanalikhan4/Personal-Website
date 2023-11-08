@@ -28,9 +28,9 @@ body {
   }
   
   .animated-gradient {
-    background: linear-gradient(270deg, #08F7FE, #08F7FE);
+    background: linear-gradient(270deg, #08F7FE, #ffffff);
     background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
+    animation: gradientAnimation 7s ease infinite;
 }
 
   
