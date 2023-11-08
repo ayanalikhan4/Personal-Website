@@ -9,6 +9,7 @@ import Github from "../../public/github.svg"
 import Doc from "../../public/Doc.svg"
 import SkillCard from "../../components/SkillCard";
 import AboutMe from "../../components/AboutMe";
+import PhotoGallery from "../../components/PhotoGallery";
 
 export default function Home() {
 
@@ -117,6 +118,11 @@ export default function Home() {
           ]}
         />
       </section>
+      
+      <section className="mb-8">
+      <PhotoGallery/>
+      </section>
+      
 
       {/* footer section */}
       <section className="grid grid-cols-1 mb-8">
