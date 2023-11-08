@@ -18,13 +18,13 @@ const Navbar = () => {
         </span>
       </div>
 
-      <div className='hidden md:flex gap-12 text-md text-zinc-400'>
+      {/* <div className='hidden md:flex gap-12 text-md text-zinc-400'>
         <Link href="#" className='text-black font-medium'>
           Home
         </Link>
         <Link href="#">Projects</Link>
         <Link href="#">Contact</Link>
-      </div>
+      </div> */}
 
       <div className='md:hidden'>
         <button onClick={toggleDrawer}>
