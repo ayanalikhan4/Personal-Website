@@ -33,16 +33,16 @@ export default function Home() {
             <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">Contact me</button>
             <div className="flex items-center gap-4">
               
-              <SocialButton bgColor="github" >
-                <Github className="w-6 h-6" link="https://github.com/rayaan-khan428"/>
+              <SocialButton bgColor="github" link="https://github.com/rayaan-khan428">
+                <Github className="w-6 h-6" />
               </SocialButton>
 
-              <SocialButton bgColor="linkedin">
-                <Linkedin className="w-5 h-5" link="https://github.com/yourusername"/>
+              <SocialButton bgColor="linkedin" link="https://github.com/yourusername">
+                <Linkedin className="w-5 h-5" />
               </SocialButton>
 
-              <SocialButton bgColor="linkedin">
-                <Doc className="w-5 h-5" link="https://github.com/yourusername"/>
+              <SocialButton bgColor="linkedin" link="https://github.com/yourusername">
+                <Doc className="w-5 h-5" />
               </SocialButton>
 
             </div>

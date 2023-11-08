@@ -7,7 +7,6 @@ interface Props {
     link: string;
 }
 
-
 const SocialButton: React.FC<Props> = ({children, bgColor = "black", link}) => {
 
     let bgHoverColorclass;
