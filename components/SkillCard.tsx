@@ -1,5 +1,3 @@
-// components/SkillCard.tsx
-
 import React from 'react';
 
 interface SkillCardProps {
@@ -15,7 +13,11 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, items }) => {
       </div>
       <div className="p-6 flex flex-wrap gap-2">
         {items.map((item, index) => (
-          <span key={index} className="px-3 py-1 rounded-md border border-solid border-[#F8D926] text-white">
+          <span 
+            key={index} 
+            className="px-3 py-1 rounded-md border border-solid border-[#f82424] text-white 
+                       hover:bg-[#f82424] hover:text-black transition-colors duration-300"
+          >
             {item}
           </span>
         ))}

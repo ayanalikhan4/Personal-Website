@@ -9,6 +9,7 @@ const photos = [
   '/photography/IMG_8928.JPG',
   '/photography/IMG_3535.JPG',
   '/photography/IMG_2681.JPG',
+  
 ];
 
 const PhotoGallery: React.FC = () => {

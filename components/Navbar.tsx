@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  const handleScroll = (sectionId) => {
+    // Close the drawer if open
+    setIsDrawerOpen(false);
+    // Scroll to the given section
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
@@ -18,13 +26,21 @@ const Navbar = () => {
         </span>
       </div>
 
-      {/* <div className='hidden md:flex gap-12 text-md text-zinc-400'>
-        <Link href="#" className='text-black font-medium'>
+      <div className='hidden md:flex gap-12 text-md text-zinc-400'>
+        {/* Use a tags with onClick handlers instead of Link for smooth scroll */}
+        <a onClick={() => handleScroll('home')} className='cursor-pointer text-black font-medium'>
           Home
-        </Link>
-        <Link href="#">Projects</Link>
-        <Link href="#">Contact</Link>
-      </div> */}
+        </a>
+        <a onClick={() => handleScroll('projects')} className='cursor-pointer'>
+          Projects
+        </a>
+        <a onClick={() => handleScroll('skills')} className='cursor-pointer'>
+          Skills
+        </a>
+        <a onClick={() => handleScroll('contact')} className='cursor-pointer'>
+          Contact
+        </a>
+      </div>
 
       <div className='md:hidden'>
         <button onClick={toggleDrawer}>
@@ -33,29 +49,32 @@ const Navbar = () => {
         </button>
       </div>
 
-      <AnimatePresence>
-        {isDrawerOpen && (
-          <motion.div
-            initial={{ x: '100%' }}
-            animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ duration: 0.3 }}
-            className='fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg p-4'
-          >
-            <button onClick={toggleDrawer} className='mb-4'>
-              {/* Replace with your close icon */}
-              ✖
-            </button>
-            <div className='flex flex-col gap-4'>
-              <Link href="#" className='text-black font-medium'>
-                Home
-              </Link>
-              <Link href="#">Projects</Link>
-              <Link href="#">Contact</Link>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Drawer for mobile view */}
+      {isDrawerOpen && (
+        <div
+          className='fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg p-4'
+          style={{ transition: 'transform 0.3s ease-in-out', transform: isDrawerOpen ? 'translateX(0)' : 'translateX(100%)' }}
+        >
+          <button onClick={toggleDrawer} className='mb-4'>
+            {/* Replace with your close icon */}
+            ✖
+          </button>
+          <div className='flex flex-col gap-4'>
+            <a onClick={() => handleScroll('home')} className='cursor-pointer text-black font-medium'>
+              Home
+            </a>
+            <a onClick={() => handleScroll('projects')} className='cursor-pointer'>
+              Projects
+            </a>
+            <a onClick={() => handleScroll('skills')} className='cursor-pointer'>
+              Skills
+            </a>
+            <a onClick={() => handleScroll('contact')} className='cursor-pointer'>
+              Contact
+            </a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

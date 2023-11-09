@@ -42,7 +42,7 @@ export default function Home() {
 
       <Navbar/>
       
-      <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
+      <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
 
         <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
           <h1 className="text-4xl font-semibold">Rayaan Khan | Software Engineer</h1>
@@ -82,7 +82,7 @@ export default function Home() {
         <AboutMe />
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
+      <section id="projects" className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
           name="Huberman AI"
           description="Get scientifically accurate answers"
@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* Skills */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <section id="skills" className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         <SkillCard
           title="Tech Stack"
           items={[
@@ -143,13 +143,13 @@ export default function Home() {
         />
       </section>
       
-      <section className="mb-8">
+      <section id="photos" className="mb-8">
       <PhotoGallery/>
       </section>
       
 
       {/* footer section */}
-      <section className="grid grid-cols-1 mb-8">
+      <section id="contact" className="grid grid-cols-1 mb-8">
         <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
           <h1 className="text-4xl font-semibold">Want to work together?</h1>
           <p className="flex-1">Feel free to reach out to collaborate on something or just say hello! <br></br> rayaan.k.ca@gmail.com
