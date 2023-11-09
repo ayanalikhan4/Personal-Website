@@ -10,6 +10,23 @@ import Doc from "../../public/Doc.svg"
 import SkillCard from "../../components/SkillCard";
 import AboutMe from "../../components/AboutMe";
 import PhotoGallery from "../../components/PhotoGallery";
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: { opacity: 0, x: -100 },
+  visible: { opacity: 1, x: 0 },
+};
+
+const imageVariants = {
+  hidden: { opacity: 0, scale: 0.8 },
+  visible: { opacity: 1, scale: 1 },
+};
+
+const transition = {
+  type: 'spring',
+  stiffness: 100,
+  damping: 10,
+};
 
 export default function Home() {
 
@@ -29,9 +46,11 @@ export default function Home() {
 
         <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
           <h1 className="text-4xl font-semibold">Rayaan Khan | Software Engineer</h1>
+
+
           <p className="flex-1">
 
-            - Pusuing Hons. BSc Computer Science <br />
+            - Pursuing Hons. BSc Computer Science <br />
             - Graduation: April 2026 <br />
             - University: Wilfrid Laurier <br />
 
@@ -57,7 +76,7 @@ export default function Home() {
           </div>
         </div>
         <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile.jpg')] bg-cover bg-center"/>
-      </section>  
+      </section>
 
       <section className="grid grid-cols-1 mb-8">
         <AboutMe />
