@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 
+// Define the Navbar functional component
 const Navbar = () => {
+  // State to manage the drawer's open/close status
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
+  // Function to toggle the drawer state
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  const handleScroll = (sectionId) => {
+  // Function to handle scrolling to a section
+  const handleScroll = (sectionId: string) => {
     // Close the drawer if open
     setIsDrawerOpen(false);
     // Scroll to the given section
@@ -19,6 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className='flex justify-between items-center py-4 px-2'>
+      {/* Logo and title */}
       <div className='flex items-center gap-[1ch]'>
         <div className='w-5 h-5 bg-yellow-400 rounded-full' />
         <span className='text-sm font-semibold tracking-widest text-white'>
@@ -26,8 +31,8 @@ const Navbar = () => {
         </span>
       </div>
 
+      {/* Desktop navigation links */}
       <div className='hidden md:flex gap-12 text-md text-zinc-400'>
-        {/* Use a tags with onClick handlers instead of Link for smooth scroll */}
         <a onClick={() => handleScroll('home')} className='cursor-pointer text-black font-medium'>
           Home
         </a>
@@ -42,9 +47,9 @@ const Navbar = () => {
         </a>
       </div>
 
+      {/* Mobile menu button */}
       <div className='md:hidden'>
         <button onClick={toggleDrawer}>
-          {/* Replace with your icon */}
           ☰
         </button>
       </div>
@@ -56,7 +61,6 @@ const Navbar = () => {
           style={{ transition: 'transform 0.3s ease-in-out', transform: isDrawerOpen ? 'translateX(0)' : 'translateX(100%)' }}
         >
           <button onClick={toggleDrawer} className='mb-4'>
-            {/* Replace with your close icon */}
             ✖
           </button>
           <div className='flex flex-col gap-4'>
