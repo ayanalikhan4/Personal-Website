@@ -48,13 +48,13 @@ export default function Home() {
           <h1 className="text-4xl font-semibold">Rayaan Khan | Software Engineer</h1>
 
 
-          <p className="flex-1">
+          <ul className="list-disc pl-5 text-base md:text-lg lg:text-xl text-black-700 dark:text-gray-300 leading-relaxed mt-4 mb-6">
+              <li>Pursuing Hons. BSc Computer Science</li>
+              <li>Graduation: April 2026</li>
+              <li>University: Wilfrid Laurier</li>
+          </ul>
 
-            - Pursuing Hons. BSc Computer Science <br />
-            - Graduation: April 2026 <br />
-            - University: Wilfrid Laurier <br />
 
-          </p>
 
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
             <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">Contact me</button>
