@@ -68,7 +68,7 @@ export default function Home() {
                 <Linkedin className="w-5 h-5" />
               </SocialButton>
 
-              <SocialButton bgColor="dribble" link="https://drive.google.com/file/d/1kM9gJMOSeS_mOWNT7OywWfEaQTz1FOAa/view?usp=sharinge">
+              <SocialButton bgColor="dribble" link="https://docs.google.com/document/d/1GQHRYXHSb6MPM9W0aQpyTu52O4FA_gft/edit?usp=sharing&ouid=100819565910931085672&rtpof=true&sd=true">
                 <Doc className="w-5 h-5" />
               </SocialButton>
 
@@ -109,12 +109,12 @@ export default function Home() {
           link="https://research2-slides-front-end.vercel.app/"
         />
         <ProjectPreview
-          name="Huberman AI"
-          description="Get scientifically accurate answers to your questions"
+          name="Rocket Game"
+          description="3D Game made with Unity & C++"
           imageUrl="/project-3.png"
           bgColor="#252525"
           dark
-          link="https://research2-slides-front-end.vercel.app/"
+          link="https://github.com/Rayaan-khan428/Udemy-Rocket-Game"
         />
       </section>
 
