@@ -11,7 +11,7 @@
 
 body {
     @apply max-w-[68rem] w-[95vw] mx-auto;
-    background: #0F0F0F;
+    background: #F0EDE5;
     /* overflow-x: hidden; */
 }
 
@@ -28,22 +28,21 @@ body {
   }
   
 .animated-gradient {
-    background: linear-gradient(270deg, #F8D926, #f82424);
+    background: linear-gradient(270deg, #E1E2E2, #18A999);
     background-size: 400% 400%;
     animation: gradientAnimation 7s ease infinite;
 }
 
 
 .animated-gradient-text {
-  background: linear-gradient(270deg, #F8D926, #f82424);
+  background: linear-gradient(270deg, #323232, #5C5C5C);
   background-size: 400% 400%;
   animation: gradientAnimation 7s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block; /* Required for the background to apply only to the text */
+  display: inline-block; 
 }
 
-/* For browsers that don't support text gradients, you can fallback to a solid color */
 @supports not (-webkit-background-clip: text) {
   .animated-gradient-text {
     color: #F8D926; /* Fallback color */

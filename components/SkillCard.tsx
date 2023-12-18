@@ -10,10 +10,10 @@ interface SkillCardProps {
 const SkillCard: React.FC<SkillCardProps> = ({ title, items }) => {
   return (
     // Card container
-    <div className="bg-[#1E1E1E] rounded-3xl shadow-xl overflow-hidden">
+    <div className="bg-[#E1E2E2] rounded-3xl shadow-xl overflow-hidden">
       {/* Card header with gradient background */}
-      <div className="bg-gradient-to-r from-[#434343] to-[#232526] p-6">
-        <h3 className="text-xl font-semibold text-white">{title}</h3>
+      <div className="bg-gradient-to-r from-[#E1E2E2] to-[#E1E2E2] p-6">
+        <h3 className="text-xl font-semibold text-black">{title}</h3>
       </div>
       {/* Container for skill items */}
       <div className="p-6 flex flex-wrap gap-2">
@@ -21,8 +21,8 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, items }) => {
           // Skill item
           <span 
             key={index} 
-            className="px-3 py-1 rounded-md border border-solid border-[#f82424] text-white 
-                       hover:bg-[#f82424] hover:text-black transition-colors duration-300 cursor-default"
+            className="px-3 py-1 rounded-md border border-solid border-[#000000] text-black 
+                       hover:bg-[#5C5C5C] hover:text-black transition-colors duration-300 cursor-default"
           >
             {item}
           </span>

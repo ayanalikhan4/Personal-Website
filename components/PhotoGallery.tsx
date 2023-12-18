@@ -14,9 +14,9 @@ const photos = [
 
 const PhotoGallery: React.FC = () => {
   return (
-    <div className="bg-[#1E1E1E] p-6 md:p-10 rounded-3xl shadow-xl">
-      <h2 className="text-3xl font-semibold text-white mb-6">Photography</h2>
-      <h3 className="text-2xl font-semibold mb-4 animated-gradient-text">some of my favourite shots</h3>
+    <div className="bg-[#E1E2E2] p-6 md:p-10 rounded-3xl shadow-xl">
+      <h2 className="text-3xl font-semibold text-black mb-6">Photography</h2>
+      <h3 className="text-2xl font-semibold mb-4 animated-gradient-text">Some of my favourite shots</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {photos.map((photo, index) => (
         <div key={index} className="w-full h-64 overflow-hidden rounded-lg bg-gray-500">

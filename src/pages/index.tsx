@@ -43,40 +43,28 @@ export default function Home() {
       <Navbar/>
       
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-
-        <div className="h=[30rem] rounded-3xl p-10 flex flex-col gap-16 animated-gradient bg-cover">
-          <h1 className="text-4xl font-semibold">Rayaan Khan | Software Engineer</h1>
-
-
-          <ul className="list-disc pl-5 text-base md:text-lg lg:text-xl text-black-700 dark:text-gray-300 leading-relaxed mt-4 mb-6">
-              <li>Pursuing Hons. BSc Computer Science</li>
-              <li>Graduation: April 2026</li>
-              <li>University: Wilfrid Laurier</li>
-          </ul>
-
-
-
-          <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
-            <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">Contact me</button>
-            <div className="flex items-center gap-4">
-              
-              <SocialButton bgColor="github" link="https://github.com/rayaan-khan428">
-                <Github className="w-6 h-6" />
-              </SocialButton>
-
-              <SocialButton bgColor="linkedin" link="https://www.linkedin.com/in/rayaan-k/">
-                <Linkedin className="w-5 h-5" />
-              </SocialButton>
-
-              <SocialButton bgColor="dribble" link="https://docs.google.com/document/d/1GQHRYXHSb6MPM9W0aQpyTu52O4FA_gft/edit?usp=sharing&ouid=100819565910931085672&rtpof=true&sd=true">
-                <Doc className="w-5 h-5" />
-              </SocialButton>
-
+        <div className="h-[30rem] rounded-3xl p-10 flex flex-col justify-between animated-gradient bg-cover">
+          <h1 className="text-4xl font-semibold mb-10">Rayaan Khan | Software Engineer</h1>
+          <div className="mt-auto">
+            <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end mb-4">
+              <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">Contact me</button>
+              <div className="flex items-center gap-4">
+                <SocialButton bgColor="github" link="https://github.com/rayaan-khan428">
+                  <Github className="w-6 h-6" />
+                </SocialButton>
+                <SocialButton bgColor="linkedin" link="https://www.linkedin.com/in/rayaan-k/">
+                  <Linkedin className="w-5 h-5" />
+                </SocialButton>
+                <SocialButton bgColor="dribble" link="https://docs.google.com/document/d/1GQHRYXHSb6MPM9W0aQpyTu52O4FA_gft/edit?usp=sharing&ouid=100819565910931085672&rtpof=true&sd=true">
+                  <Doc className="w-5 h-5" />
+                </SocialButton>
+              </div>
             </div>
           </div>
         </div>
         <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile.jpg')] bg-cover bg-center"/>
       </section>
+
 
       <section className="grid grid-cols-1 mb-8">
         <AboutMe />
