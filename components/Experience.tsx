@@ -5,7 +5,7 @@ interface Props {
     companyName?: string;
     role?: string;
     experiencePoints?: string[];
-    bgColor?: string;
+    bgColor?: string; // This prop is no longer needed since the background is hardcoded
     dark?: boolean;
     link?: string;
     logoSrc?: string; // New prop for the company logo
@@ -15,7 +15,6 @@ const ExperiencePreview: React.FC<Props> = ({
     companyName = "Company Name",
     role = "Your Role",
     experiencePoints = ["Experience point 1", "Experience point 2"],
-    bgColor = "#E1E2E2",
     dark = false,
     link = "#",
     logoSrc = "https://1000logos.net/wp-content/uploads/2020/08/Logo-Thales.jpg", // Default to no image
@@ -25,8 +24,8 @@ const ExperiencePreview: React.FC<Props> = ({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex items-center justify-between rounded-xl overflow-hidden shadow-lg ${dark ? "dark" : ""}`}
-      style={{ background: bgColor }}
+      className={`flex items-center justify-between rounded-3xl overflow-hidden shadow-xl ${dark ? "dark" : ""}`}
+      style={{ backgroundColor: '#E1E2E2' }} // Use the same background color as in AboutMe
       initial="initial"
       whileInView="animate"
       variants={PreviewAnimation}
@@ -36,22 +35,28 @@ const ExperiencePreview: React.FC<Props> = ({
           ease: "easeOut",
       }}
     >
-        <div className='h-full w-4/5 p-6'>
-            <h2 className='font-bold text-xl dark:text-white'>{companyName}</h2>
-            <h3 className='font-medium text-lg dark:text-white'>{role}</h3>
-            <ul className='custom-list space-y-2 text-sm text-zinc-500 dark:text-zinc-300 mt-4'>
+        <div className='w-4/5 p-6 md:p-10'> {/* Match the padding from AboutMe */}
+            <h2 className='font-semibold text-3xl'>{companyName}</h2> {/* Adjusted font size to match AboutMe */}
+            <h3 className='font-semibold text-2xl mb-4'>{role}</h3> {/* Adjusted font size and margin to match AboutMe */}
+            <ul className='space-y-4'> {/* Adjusted spacing to match AboutMe */}
                 {experiencePoints.map((point, index) => (
-                    <li key={index} className={`border-b ${index !== experiencePoints.length - 1 ? 'border-gray-300' : 'border-transparent'} pb-2`}>
+                    <li key={index} className={`border-b ${index !== experiencePoints.length - 1 ? 'border-gray-300' : 'border-transparent'} pb-2 text-black`}>
                         {point}
                     </li>
                 ))}
             </ul>
         </div>
-        {logoSrc && (
-            <div className='w-1/5 h-full flex items-center justify-center p-4'>
-                <img src={logoSrc} alt={`${companyName} logo`} className='max-h-full max-w-full' />
-            </div>
-        )}
+    {logoSrc && (
+        <div className='w-1/5 flex items-center justify-center p-4'>
+            <img 
+                src={logoSrc} 
+                alt={`${companyName} logo`} 
+                className='max-h-full max-w-full rounded-3xl' // Apply border-radius to all corners of the image
+                // Or for top-right and bottom-right corners only:
+                // className='max-h-full max-w-full rounded-tr-3xl rounded-br-3xl'
+            />
+        </div>
+    )}
     </motion.a>
   )
 }

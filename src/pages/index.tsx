@@ -71,7 +71,7 @@ export default function Home() {
         <AboutMe />
       </section>
 
-      <section id='experience' className="grid grid-cols-1 lg:grid-cols-1 gap-4 my-4">
+      <section id='experience' className="grid grid-cols-1 lg:grid-cols-1 gap-4 my-4 mb-8">
         <Experience
         companyName="Thales"
         role="Software Engineer Intern"
