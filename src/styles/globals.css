@@ -2,59 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body {
-    @apply max-w-[90%] w-[1080px] mx-auto
-    bg-black
-    overflow-x: hidden;
-    
-} */
-
+/* Primary body styling */
 body {
-    @apply max-w-[68rem] w-[95vw] mx-auto;
-    background: #4D4846;
-    /* overflow-x: hidden; */
+  /* Maximum width set to 68rem, width set to 95% of the viewport width, centered */
+  @apply max-w-[68rem] w-[95vw] mx-auto;
+
+  /* Background color set to a dark gray tone */
+  background: #4D4846;
 }
 
-@keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
+/* Animated gradient background for sections */
 .animated-gradient {
-    background: linear-gradient(270deg, #E1E2E2, #9c9e9e);
-    background-size: 400% 400%;
-    animation: gradientAnimation 7s ease infinite;
+  /* Gradient colors and size */
+  background: linear-gradient(270deg, #E1E2E2, #9c9e9e);
+  background-size: 400% 400%;
+
+  /* Infinite animation applying the gradient */
+  animation: gradientAnimation 7s ease infinite;
 }
 
-
+/* Animated gradient text effect */
 .animated-gradient-text {
+  /* Gradient colors and size for text */
   background: linear-gradient(270deg, #323232, #5C5C5C);
   background-size: 400% 400%;
+
+  /* Animation and text clipping */
   animation: gradientAnimation 7s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block; 
+  display: inline-block;
 }
 
+/* Fallback for browsers that don't support text clipping */
 @supports not (-webkit-background-clip: text) {
   .animated-gradient-text {
-    color: #F8D926; /* Fallback color */
+    /* Solid color used when gradient text isn't supported */
+    color: #F8D926;
   }
 }
 
+/* Custom list styling */
 .custom-list {
-  list-style-type: none; /* Remove default list styling */
-  padding-left: 0; /* Remove default padding */
+  /* No bullets for list items */
+  list-style-type: none;
+  
+  /* No default padding for list */
+  padding-left: 0;
 }
 
+/* Borders between list items */
 .custom-list li:not(:last-child) {
-  border-bottom: 1px solid #2a2b2c; /* Light gray border color */
-  padding-bottom: 0.5em; /* Space between text and border */
+  /* Light gray border color for separation */
+  border-bottom: 1px solid #2a2b2c;
+
+  /* Space between text and border */
+  padding-bottom: 0.5em;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }

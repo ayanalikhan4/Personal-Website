@@ -67,6 +67,9 @@ export default function Home() {
       </section>
 
 
+      {/* hero banner section ends */}
+
+
       <section className="grid grid-cols-1 mb-8">
         <AboutMe />
       </section>
@@ -80,9 +83,8 @@ export default function Home() {
           "Worked with senior engineers to modify current D-SPICO application to adapt to requirements for Wayside Train Monitoring System.",
           "Documented and validated the compatibility and testing procedures between D-SPICO software and onboard train hardware, ensuring the safe operation of trains."
         ]}
-        bgColor="#E1E2E2"
         dark={false}
-        link="https://cabinetm-beta.s3.amazonaws.com/00000175-994c-6feb-148a-97678a75b712.png"
+        link="https://www.thalesgroup.com/en"
         logoSrc="/thales_logo.png"
         />
 
@@ -94,18 +96,28 @@ export default function Home() {
           "Reduced scraping time by 2 minutes per listing, by optimizing the code with multi-threading techniques.",
           "Engineered an application utilizing Places API, tailored for restaurant information retrieval."
         ]}
-        bgColor="#E1E2E2"
         dark={false}
-        link="https://yt3.googleusercontent.com/IRELTnzuPx1Ynr_I70Wq-AwIiNFS7WYZ7ORmWW-MhydGPA_eU4KhXmO7V2aMYZbYYuEXqFmd6A=s900-c-k-c0x00ffffff-no-rj"
+        link="https://www.dyneapp.ca/"
         logoSrc="https://yt3.googleusercontent.com/IRELTnzuPx1Ynr_I70Wq-AwIiNFS7WYZ7ORmWW-MhydGPA_eU4KhXmO7V2aMYZbYYuEXqFmd6A=s900-c-k-c0x00ffffff-no-rj"
         />
       </section>
 
       <section id="projects" className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
+
+          <ProjectPreview
+          name="Leetr"
+          description="Save time & Prepare effectively "
+          imageUrl="/project-1.png"
+          bgColor="#252525"
+          dark
+          link="https://research2-slides-front-end.vercel.app/"
+        />      
+
+        
         <ProjectPreview
           name="Huberman AI"
           description="Get scientifically accurate answers"
-          imageUrl="/project-1.png"
+          imageUrl="/project-2.png"
           bgColor="#252525"
           dark
           link="https://research2-slides-front-end.vercel.app/"
@@ -113,7 +125,7 @@ export default function Home() {
         <ProjectPreview
           name="Airport Management System"
           description="Manage all aspects of an airport"
-          imageUrl="/project-2.png"
+          imageUrl="/project-3.png"
           bgColor="#252525"
           dark
           link="https://github.com/Rayaan-khan428/Airline-Management-System"
@@ -122,18 +134,10 @@ export default function Home() {
         <ProjectPreview
           name="Research2Slides"
           description="Convert research papers to powerpoints!"
-          imageUrl="/project-3.png"
+          imageUrl="/project-4.png"
           bgColor="#252525"
           dark
           link="https://research2-slides-front-end.vercel.app/"
-        />
-        <ProjectPreview
-          name="Rocket Game"
-          description="3D Game made with Unity & C++"
-          imageUrl="/project-3.png"
-          bgColor="#252525"
-          dark
-          link="https://github.com/Rayaan-khan428/Udemy-Rocket-Game"
         />
       </section>
 
