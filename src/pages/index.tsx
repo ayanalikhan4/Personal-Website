@@ -78,11 +78,12 @@ export default function Home() {
         experiencePoints={[
           "Developed D-SPICO web-app for train safety monitoring and testing, participating in full-stack development.",
           "Worked with senior engineers to modify current D-SPICO application to adapt to requirements for Wayside Train Monitoring System.",
-          "Documented and validated the compatibility and testing procedures between D-SPICO software and onboard train hardware, ensuring the safe and reliable operation of trains."
+          "Documented and validated the compatibility and testing procedures between D-SPICO software and onboard train hardware, ensuring the safe operation of trains."
         ]}
-        bgColor="#f0f0f0"
+        bgColor="#E1E2E2"
         dark={false}
         link="https://cabinetm-beta.s3.amazonaws.com/00000175-994c-6feb-148a-97678a75b712.png"
+        logoSrc="/thales_logo.png"
         />
 
         <Experience
@@ -93,9 +94,10 @@ export default function Home() {
           "Reduced scraping time by 2 minutes per listing, by optimizing the code with multi-threading techniques.",
           "Engineered an application utilizing Places API, tailored for restaurant information retrieval."
         ]}
-        bgColor="#f0f0f0"
+        bgColor="#E1E2E2"
         dark={false}
         link="https://yt3.googleusercontent.com/IRELTnzuPx1Ynr_I70Wq-AwIiNFS7WYZ7ORmWW-MhydGPA_eU4KhXmO7V2aMYZbYYuEXqFmd6A=s900-c-k-c0x00ffffff-no-rj"
+        logoSrc="https://yt3.googleusercontent.com/IRELTnzuPx1Ynr_I70Wq-AwIiNFS7WYZ7ORmWW-MhydGPA_eU4KhXmO7V2aMYZbYYuEXqFmd6A=s900-c-k-c0x00ffffff-no-rj"
         />
       </section>
 

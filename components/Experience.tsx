@@ -7,23 +7,25 @@ interface Props {
     experiencePoints?: string[];
     bgColor?: string;
     dark?: boolean;
-    link?: string; // This prop will be used for the clickable link
+    link?: string;
+    logoSrc?: string; // New prop for the company logo
 }
 
 const ExperiencePreview: React.FC<Props> = ({
     companyName = "Company Name",
     role = "Your Role",
     experiencePoints = ["Experience point 1", "Experience point 2"],
-    bgColor = "#ffffff",
+    bgColor = "#E1E2E2",
     dark = false,
-    link = "#" // Default link to a placeholder
+    link = "#",
+    logoSrc = "https://1000logos.net/wp-content/uploads/2020/08/Logo-Thales.jpg", // Default to no image
 }) => {
   return ( 
-    <motion.a // Changed to 'a' tag to make it clickable
-      href={link} // Link to the provided URL
-      target="_blank" // Opens the link in a new tab
-      rel="noopener noreferrer" // Security measure for opening new tabs
-      className={`rounded-xl overflow-hidden shadow-lg ${dark ? "dark" : ""}`}
+    <motion.a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`flex items-center justify-between rounded-xl overflow-hidden shadow-lg ${dark ? "dark" : ""}`}
       style={{ background: bgColor }}
       initial="initial"
       whileInView="animate"
@@ -34,15 +36,22 @@ const ExperiencePreview: React.FC<Props> = ({
           ease: "easeOut",
       }}
     >
-        <div className='h-full w-full p-6'>
+        <div className='h-full w-4/5 p-6'>
             <h2 className='font-bold text-xl dark:text-white'>{companyName}</h2>
             <h3 className='font-medium text-lg dark:text-white'>{role}</h3>
-            <ul className='list-disc list-inside space-y-2 text-sm text-zinc-500 dark:text-zinc-300 mt-4'>
+            <ul className='custom-list space-y-2 text-sm text-zinc-500 dark:text-zinc-300 mt-4'>
                 {experiencePoints.map((point, index) => (
-                    <li key={index}>{point}</li>
+                    <li key={index} className={`border-b ${index !== experiencePoints.length - 1 ? 'border-gray-300' : 'border-transparent'} pb-2`}>
+                        {point}
+                    </li>
                 ))}
             </ul>
         </div>
+        {logoSrc && (
+            <div className='w-1/5 h-full flex items-center justify-center p-4'>
+                <img src={logoSrc} alt={`${companyName} logo`} className='max-h-full max-w-full' />
+            </div>
+        )}
     </motion.a>
   )
 }

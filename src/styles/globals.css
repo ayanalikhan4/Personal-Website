@@ -11,7 +11,7 @@
 
 body {
     @apply max-w-[68rem] w-[95vw] mx-auto;
-    background: #F0EDE5;
+    background: #4D4846;
     /* overflow-x: hidden; */
 }
 
@@ -28,7 +28,7 @@ body {
   }
   
 .animated-gradient {
-    background: linear-gradient(270deg, #E1E2E2, #18A999);
+    background: linear-gradient(270deg, #E1E2E2, #9c9e9e);
     background-size: 400% 400%;
     animation: gradientAnimation 7s ease infinite;
 }
@@ -49,4 +49,12 @@ body {
   }
 }
 
-/* image */
+.custom-list {
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0; /* Remove default padding */
+}
+
+.custom-list li:not(:last-child) {
+  border-bottom: 1px solid #2a2b2c; /* Light gray border color */
+  padding-bottom: 0.5em; /* Space between text and border */
+}
