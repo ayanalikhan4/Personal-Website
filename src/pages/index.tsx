@@ -10,6 +10,7 @@ import Doc from "../../public/Doc.svg"
 import SkillCard from "../../components/SkillCard";
 import AboutMe from "../../components/AboutMe";
 import PhotoGallery from "../../components/PhotoGallery";
+import Experience from "../../components/Experience";
 import { motion } from 'framer-motion';
 
 const containerVariants = {
@@ -68,6 +69,34 @@ export default function Home() {
 
       <section className="grid grid-cols-1 mb-8">
         <AboutMe />
+      </section>
+
+      <section id='experience' className="grid grid-cols-1 lg:grid-cols-1 gap-4 my-4">
+        <Experience
+        companyName="Thales"
+        role="Software Engineer Intern"
+        experiencePoints={[
+          "Developed D-SPICO web-app for train safety monitoring and testing, participating in full-stack development.",
+          "Worked with senior engineers to modify current D-SPICO application to adapt to requirements for Wayside Train Monitoring System.",
+          "Documented and validated the compatibility and testing procedures between D-SPICO software and onboard train hardware, ensuring the safe and reliable operation of trains."
+        ]}
+        bgColor="#f0f0f0"
+        dark={false}
+        link="https://cabinetm-beta.s3.amazonaws.com/00000175-994c-6feb-148a-97678a75b712.png"
+        />
+
+        <Experience
+        companyName="Dyne"
+        role="Software Engineer Intern"
+        experiencePoints={[
+          "Utilized Selenium effectively to collect comprehensive data from over 3000+ real estate listings",
+          "Reduced scraping time by 2 minutes per listing, by optimizing the code with multi-threading techniques.",
+          "Engineered an application utilizing Places API, tailored for restaurant information retrieval."
+        ]}
+        bgColor="#f0f0f0"
+        dark={false}
+        link="https://yt3.googleusercontent.com/IRELTnzuPx1Ynr_I70Wq-AwIiNFS7WYZ7ORmWW-MhydGPA_eU4KhXmO7V2aMYZbYYuEXqFmd6A=s900-c-k-c0x00ffffff-no-rj"
+        />
       </section>
 
       <section id="projects" className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
