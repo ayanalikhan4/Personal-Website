@@ -56,7 +56,7 @@ export default function Home() {
                 <SocialButton bgColor="linkedin" link="https://www.linkedin.com/in/rayaan-k/">
                   <Linkedin className="w-5 h-5" />
                 </SocialButton>
-                <SocialButton bgColor="dribble" link="https://docs.google.com/document/d/1GQHRYXHSb6MPM9W0aQpyTu52O4FA_gft/edit?usp=sharing&ouid=100819565910931085672&rtpof=true&sd=true">
+                <SocialButton bgColor="dribble" link="https://docs.google.com/document/d/1d5cTvAW1e4MiQ92Y-gsn3pnisK_oi-_8/edit?usp=sharing&ouid=100819565910931085672&rtpof=true&sd=true">
                   <Doc className="w-5 h-5" />
                 </SocialButton>
               </div>
