@@ -1,37 +1,31 @@
 // components/AboutMe.tsx
 
-import React from 'react';
+import React from "react";
 
 const AboutMe: React.FC = () => {
   return (
-    <div className="bg-[#E1E2E2] rounded-3xl shadow-xl overflow-hidden text-black p-6 md:p-10">
-      <h2 className="text-3xl font-semibold mb-4 animated-gradient-text">About Me</h2>
+    <div className="bg-[#ffffff] rounded-3xl shadow-xl overflow-hidden text-black p-6 md:p-10">
+      <h2 className="text-3xl font-semibold mb-4 animated-gradient-text">
+        About Me
+      </h2>
       <p className="mb-4">
-        I'm a third year CS student at Wilfrid Laurier University studying Computer Science  
-        and planning to do a concentration in Artificial Intelligence. Some of my favourite 
-        courses were/are Software Engineering Principles, Databases, E-commerce, and Machine Learning. 
-      </p>
-      
-      <h3 className="text-2xl font-semibold mb-4 animated-gradient-text">My Passion</h3>
-      <p className="mb-4">
-        I'm in Computer Science because I have a strong desire to improve the world through technology. 
-        Since I was a child, I loved everything about technology, building a competition ready robot in 
-        grade 6 for the robotics club was what set things in motion. Today, I think what sets me apart is 
-        my well-roundedness. I'm not just diverse in my technical skill sets, but I am constantly engaged with the business side. 
-        I'm confident that I can succeed at any job due to my ability to ask the right questions and learn 
-        quickly.
-      </p>
-      
-      <h3 className="text-2xl font-semibold mb-4 animated-gradient-text">In my free time</h3>
-      <p className="mb-4">
-        Beyond my technical pursuits, I love cooking. As an avid gym goer I like to meal prep 
-        for the week and am always experimenting with new recipes and adding in my own 
-        creativity to the meal. I also love to read and listen to podcasts. I'll occasionally
-        binge a good novel but mostly I will read books about history, self-development, and 
-        tech. Some of my favourite books are Atomic Habits, The Life and Legend of The 
-        Sultan Saladin, and Percy Jackson (The Sea of Monsters). 
+        Hey! I’m Ayan, a senior majoring in Computer Science and Mathematics. I
+        like to build stuff on the internet. My interests span anywhere from web
+        development to Artificial Intelligence. I am consistently eager to
+        acquire new knowledge.
       </p>
 
+      <h3 className="text-2xl font-semibold mb-4 animated-gradient-text">
+        Beyond School
+      </h3>
+      <p className="mb-4">
+        In my free time, I love cooking and have recently taken up sewing.
+        Traveling is a passion of mine, as it allows me to explore new cultures
+        and places. I also enjoy playing football, which helps me stay active
+        and healthy. Engaging in debates is another interest of mine, as it
+        sharpens my critical thinking skills. Additionally, photography is one
+        of my favorite hobbies, and I occasionally enjoy reading books as well.
+      </p>
     </div>
   );
 };

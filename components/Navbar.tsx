@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // Define the Navbar functional component
 const Navbar = () => {
@@ -17,63 +17,94 @@ const Navbar = () => {
     // Scroll to the given section
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   return (
-    <nav className='flex justify-between items-center py-4 px-2'>
+    <nav className="flex justify-between items-center py-4 px-2">
       {/* Logo and title */}
-      <div className='flex items-center gap-[1ch]'>
-        <div className='w-5 h-5 bg-yellow-400 rounded-full' />
-        <span className='text-sm font-semibold tracking-widest text-white'>
+      <div className="flex items-center gap-[1ch]">
+        <div className="w-5 h-5 bg-yellow-400 rounded-full" />
+        <span className="text-sm font-semibold tracking-widest text-white">
           PORTFOLIO
         </span>
       </div>
 
       {/* Desktop navigation links */}
-      <div className='hidden md:flex gap-12 text-md text-zinc-400'>
-        <a onClick={() => handleScroll('home')} className='cursor-pointer text-black font-medium'>
+      <div className="hidden md:flex gap-8 text-md text-zinc-400">
+        <a
+          onClick={() => handleScroll("home")}
+          className="cursor-pointer text-white font-medium"
+        >
           Home
         </a>
-        <a onClick={() => handleScroll('projects')} className='cursor-pointer'>
+        <a
+          onClick={() => handleScroll("experience")}
+          className="cursor-pointer text-white"
+        >
+          Experience
+        </a>
+        <a
+          onClick={() => handleScroll("projects")}
+          className="cursor-pointer text-white"
+        >
           Projects
         </a>
-        <a onClick={() => handleScroll('skills')} className='cursor-pointer'>
+        <a
+          onClick={() => handleScroll("skills")}
+          className="cursor-pointer text-white"
+        >
           Skills
         </a>
-        <a onClick={() => handleScroll('contact')} className='cursor-pointer'>
+        <a
+          onClick={() => handleScroll("contact")}
+          className="cursor-pointer text-white"
+        >
           Contact
         </a>
       </div>
 
       {/* Mobile menu button */}
-      <div className='md:hidden'>
-        <button onClick={toggleDrawer}>
-          ☰
-        </button>
+      <div className="md:hidden">
+        <button onClick={toggleDrawer}>☰</button>
       </div>
 
       {/* Drawer for mobile view */}
       {isDrawerOpen && (
         <div
-          className='fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg p-4'
-          style={{ transition: 'transform 0.3s ease-in-out', transform: isDrawerOpen ? 'translateX(0)' : 'translateX(100%)' }}
+          className="fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg p-4"
+          style={{
+            transition: "transform 0.3s ease-in-out",
+            transform: isDrawerOpen ? "translateX(0)" : "translateX(100%)",
+          }}
         >
-          <button onClick={toggleDrawer} className='mb-4'>
+          <button onClick={toggleDrawer} className="mb-4">
             ✖
           </button>
-          <div className='flex flex-col gap-4'>
-            <a onClick={() => handleScroll('home')} className='cursor-pointer text-black font-medium'>
+          <div className="flex flex-col gap-4">
+            <a
+              onClick={() => handleScroll("home")}
+              className="cursor-pointer text-black font-medium"
+            >
               Home
             </a>
-            <a onClick={() => handleScroll('projects')} className='cursor-pointer'>
+            <a
+              onClick={() => handleScroll("projects")}
+              className="cursor-pointer text-white"
+            >
               Projects
             </a>
-            <a onClick={() => handleScroll('skills')} className='cursor-pointer'>
+            <a
+              onClick={() => handleScroll("skills")}
+              className="cursor-pointer text-white"
+            >
               Skills
             </a>
-            <a onClick={() => handleScroll('contact')} className='cursor-pointer'>
+            <a
+              onClick={() => handleScroll("contact")}
+              className="cursor-pointer text-white"
+            >
               Contact
             </a>
           </div>

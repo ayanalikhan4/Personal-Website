@@ -3,12 +3,12 @@
 import React from 'react';
 
 const photos = [  
-  '/photography/IMG_7547.JPG',
-  '/photography/IMG_8630.JPG',
-  '/photography/IMG_8768.JPG',
-  '/photography/IMG_8928.JPG',
-  '/photography/IMG_3535.JPG',
-  '/photography/IMG_2681.JPG',
+  '/photography/IMG_0899.PNG',
+  '/photography/IMG_0642.PNG',
+  '/photography/IMG_1332.JPG',
+  '/photography/IMG_8928.JPEG',
+  '/photography/IMG_0976.jpg',
+  '/photography/IMG_0544.JPG',
   
 ];
 

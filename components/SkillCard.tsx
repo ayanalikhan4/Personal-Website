@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 // Define TypeScript interface for SkillCard props
 interface SkillCardProps {
@@ -19,8 +19,8 @@ const SkillCard: React.FC<SkillCardProps> = ({ title, items }) => {
       <div className="p-6 flex flex-wrap gap-2">
         {items.map((item, index) => (
           // Skill item
-          <span 
-            key={index} 
+          <span
+            key={index}
             className="px-3 py-1 rounded-md border border-solid border-[#000000] text-black 
                        hover:bg-[#5C5C5C] hover:text-black transition-colors duration-300 cursor-default"
           >
