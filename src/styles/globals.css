@@ -8,13 +8,13 @@ body {
   @apply max-w-[68rem] w-[95vw] mx-auto;
 
   /* Background color set to a dark gray tone */
-  background: #222831;
+  background: #000000;
 }
 
 /* Animated gradient background for sections */
 .animated-gradient {
   /* Gradient colors and size */
-  background: linear-gradient(270deg, #00ADB5, #00ADB5);
+  background: linear-gradient(270deg, #4793AF, #4793AF);
   background-size: 400% 400%;
 
   /* Infinite animation applying the gradient */
