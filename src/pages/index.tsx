@@ -13,7 +13,6 @@ import PhotoGallery from "../../components/PhotoGallery";
 import Experience from "../../components/Experience";
 import { motion } from "framer-motion";
 
-
 const containerVariants = {
   hidden: { opacity: 0, x: -100 },
   visible: { opacity: 1, x: 0 },
@@ -132,7 +131,7 @@ export default function Home() {
               "Engineered an application utilizing Places API, tailored for restaurant information retrieval.",
             ]}
             dark={false}
-            link="https://www.dyneapp.ca/"
+            link="https://www.wlu.ca"
             logoSrc="/laurier.jpeg"
           />
           <Experience
@@ -144,7 +143,7 @@ export default function Home() {
               "Participated in regular research team meetings and proposing ideas for future research directions.",
             ]}
             dark={false}
-            link="https://www.dyneapp.ca/"
+            link="https://www.wlu.ca"
             logoSrc="/laurier.jpeg"
           />
         </div>
