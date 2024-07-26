@@ -11,7 +11,7 @@ const AboutMe: React.FC = () => {
         Hey! I’m Ayan, a senior majoring in Computer Science and Mathematics. I
         like to build stuff on the internet. My interests span anywhere from web
         development to Artificial Intelligence. I am consistently eager to
-        acquire new knowledge. Currently I am building <a href="https://wluvault.vercel.app" target="_blank" style={{ color: 'blue', textDecoration: 'underline' }}>theVault</a>
+        acquire new knowledge. Currently I am building <a href="https://wluvault.ca/" target="_blank" style={{ color: 'blue', textDecoration: 'underline' }}>TheVault</a>
       </p>
 
       <h3 className="text-2xl font-semibold mb-4 animated-gradient-text">
