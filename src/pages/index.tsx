@@ -126,9 +126,10 @@ export default function Home() {
             companyName="Wilfrid Laurier University"
             role="Research Assistant"
             experiencePoints={[
-              "Utilized Selenium effectively to collect comprehensive data from over 3000+ real estate listings",
-              "Reduced scraping time by 2 minutes per listing, by optimizing the code with multi-threading techniques.",
-              "Engineered an application utilizing Places API, tailored for restaurant information retrieval.",
+              "Designed convolutional neural networks using TensorFlow, achieving 90% accuracy in image classification.",
+              "Fine-tuned the model with different loss functions and optimization algorithms, improving accuracy.",
+              "Developed scripts for batch image processing & classification streamlining workflow and enhancing efficiency.",
+              "Created a detailed documentation for the machine learning workflows to increase knowledge sharing.",
             ]}
             dark={false}
             link="https://www.wlu.ca"
@@ -138,9 +139,10 @@ export default function Home() {
             companyName="Wilfrid Laurier University"
             role="Instructional Assistant"
             experiencePoints={[
-              "Implemented machine learning models using TensorFlow, achieving a 90% accuracy in image classification.",
-              "Gathered, cleaned, and validated datasets, ensuring the reliability of the machine learning models outcome.",
-              "Participated in regular research team meetings and proposing ideas for future research directions.",
+              "Assisted professors in implementing lesson plans tailored to students' needs while also grading assignments.",
+              "Provided one-on-one support to students requiring additional assistance with coursework, labs etc.",
+              "Facilitated group activities and discussions to reinforce classroom concepts and increase understanding. ",
+              "Courses: Calculus I, Calculus II, Linear Algebra I, Data Structures I, Data Structures II, OOP's",
             ]}
             dark={false}
             link="https://www.wlu.ca"
