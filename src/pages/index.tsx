@@ -75,7 +75,7 @@ export default function Home() {
                 </SocialButton>
                 <SocialButton
                   bgColor="dribble"
-                  link="https://drive.google.com/file/d/11ubBWkbIldv4yWy2lTWrTyTr0sqLFi60/view?usp=share_link"
+                  link="https://drive.google.com/file/d/12s44wtCxH2B6T89qQZCcrtQp_QuDS67b/view?usp=share_link"
                 >
                   <Doc className="w-5 h-5" />
                 </SocialButton>
@@ -155,21 +155,20 @@ export default function Home() {
           <h2 className="text-balck text-3xl font-semibold mb-6">Projects</h2>
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
             <ProjectPreview
+              name="Vault"
+              description="View, Share, Buy and Sell Notes"
+              imageUrl="/vault.png"
+              bgColor="#252525"
+              dark
+              link="https://www.wluvault.ca"
+            />
+            <ProjectPreview
               name="Leetr"
               description="Save time & Prepare effectively "
-              imageUrl="/project-1.png"
+              imageUrl="/leetr.png"
               bgColor="#252525"
               dark
-              link="https://github.com/ayanalikhan4"
-            />
-
-            <ProjectPreview
-              name="Eco Tracker"
-              description="Make eco-friendly choices"
-              imageUrl="/eco.png"
-              bgColor="#252525"
-              dark
-              link="https://github.com/ayanalikhan4"
+              link="https://leetr.vercel.app"
             />
             <ProjectPreview
               name="Password Manager"
@@ -180,9 +179,9 @@ export default function Home() {
               link="https://github.com/ayanalikhan4"
             />
             <ProjectPreview
-              name="Research2Slides"
-              description="Convert research papers to powerpoints!"
-              imageUrl="/project-4.png"
+              name="Eco Tracker"
+              description="Make eco-friendly choices"
+              imageUrl="/eco.png"
               bgColor="#252525"
               dark
               link="https://github.com/ayanalikhan4"
