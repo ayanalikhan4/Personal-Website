@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-[25rem] rounded-3xl p-8 bg-[url('/ayanK.JPEG')] bg-cover bg-center" />
+        <div className="h-[25rem] rounded-3xl p-8 bg-[url('/ayanalikhan.JPEG')] bg-cover bg-center" />
       </section>
 
       {/* hero banner section ends */}
