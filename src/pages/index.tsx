@@ -75,7 +75,7 @@ export default function Home() {
                 </SocialButton>
                 <SocialButton
                   bgColor="dribble"
-                  link="https://drive.google.com/file/d/12s44wtCxH2B6T89qQZCcrtQp_QuDS67b/view?usp=share_link"
+                  link="https://drive.google.com/file/d/1rwwCTFF5RbJQsL4DPCA8rw-tPOr49hiH/view?usp=share_link"
                 >
                   <Doc className="w-5 h-5" />
                 </SocialButton>
